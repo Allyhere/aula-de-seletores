@@ -1,35 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
     <title>Seletores</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="form">
-            <form action="" class="form__container">
-                <div class="form__group">
-                    <input type="text" name="name" id="" placeholder="Nome" class="input">
-                    <label for="name" class="input__label">Nome</label>
-                </div>
-                <div class="form__group">
-                    <input type="email" name="email" id="" placeholder="Email" class="input">
-                    <label for="email" class="input__label">Email</label>
-                </div>
-                <div class="form__group">
-                    <input type="password" name="password" id="" placeholder="Senha" class="input">
-                    <label for="password" class="input__label">Senha</label>
-                </div>
-                <div class="form__group">
-                    <input type="password" name="password-conf" id="" placeholder="Senha" class="input">
-                    <label for="password-conf" class="input__label">Confirmar senha</label>
-                </div>
+      <div class="container">
+        <form action="">
+          <h2>Inscreva-se</h2>
+          <div>
+            <input type="text" name="name" id="" placeholder="Nome" required />
+            <label for="name">Nome</label>
+            <span class="help-text"></span>
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email"
+              disabled
+            />
+            <label for="email">Email</label>
+            <span class="help-text"></span>
+          </div>
+          <div class="form__group">
+            <input
+              type="password"
+              name="password"
+              id=""
+              placeholder="Senha"
+              minlength="6"
+              required
+            />
+            <label for="password">Senha</label>
+            <span class="help-text"></span>
+          </div>
+          <div class="form__group">
+            <input
+              type="password"
+              name="password-conf"
+              id=""
+              placeholder="Senha"
+              minlength="6"
+              required
+            />
+            <label for="password-conf">Confirmar senha</label>
+            <span class="help-text"></span>
+          </div>
 
-                <input type="submit" name="submit" id="" value="Enviar" class="input input__submit">
-            </form>
-        </div>
+          <input type="submit" name="submit" id="" value="Enviar" />
+        </form>
+      </div>
     </main>
-</body>
+  </body>
 </html>
